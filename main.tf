@@ -10,5 +10,5 @@ terraform {
 provider "aws" {
   region = "us-east-1"
 
-  profile = "jin"
+  profile = var.AWS_PROFILE
 }

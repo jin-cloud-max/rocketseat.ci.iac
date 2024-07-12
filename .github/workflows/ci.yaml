@@ -42,7 +42,7 @@ jobs:
       - name: Run terraform plan
         run: terraform plan
         # env:
-          # TF_VAR_REGION: us-east-1
+        #   TF_VAR_PROFILE: default
       
       - name: Run terraform apply
         run: terraform apply -auto-approve
