@@ -43,14 +43,14 @@ resource "aws_iam_role" "tf-role" {
     policy = jsonencode({
       Statement = [
         {
-          Sid = "Statement2"
-          Action = "ecr:*"
+          Sid      = "Statement2"
+          Action   = "ecr:*"
           Effect   = "Allow"
           Resource = "*"
         },
         {
-          Sid = "Statement3"
-          Action = "iam:*"
+          Sid      = "Statement3"
+          Action   = "iam:*"
           Effect   = "Allow",
           Resource = "*"
         }
