@@ -34,7 +34,7 @@ jobs:
         run: terraform init
       
       - name: Run terraform format
-        run: terrafrom fmt -check
+        run: terraform fmt -check
 
       - name: Run terraform validate
         run: terraform validate
