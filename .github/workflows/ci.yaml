@@ -45,4 +45,5 @@ jobs:
         #   TF_VAR_PROFILE: default
       
       - name: Run terraform apply
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         run: terraform apply -auto-approve
